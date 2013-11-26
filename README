@@ -1,20 +1,30 @@
-Potential talking points:
-    What is Web Development?
-    Virtual Environments
-    HTML
-    CSS
-    Dynamic vs Static webpages
-    Javascript
-    MVC
-        Views (Templates)
-        Models
-        Controllers
-    Databases 
-        Migrations
-    Forms
-    Login
-    API Calls
-        JSON
-        Unit Testing
-    Deployment strategies
-        Apache (wsgi)
+Introduction to Web Development
+
+What is Web Development?
+* Web Development - Doing any development work for a website. This can include design, but we will be focusing on the portions of the website that users interact with, and can cause things to happen server-side.
+
+Things we will be going over in regards to web development.
+Introduction:
+* How browsers works: When you try to visit google.com, your browser sends a request to the IP address given through the DNS lookup of google.com. What it gets back though, is not everything you see on the page. What you really get back is a file that your browser (Firefox, Chrome, Safari, etc) interprets and displays based on the text of that file. In standard browsers, three languages are supported for the client side web development.
+* Client-side vs. Server-side: Client side means everything is done through/on the browser. Technically, you don't even need internet access to do anything with the data you've been given if you're interacting with client-side code. Now, to submit data, we do need an internet access. What happens is the data you are submitting is sent back to a web address, with a method type (Get, Post, Head, etc) <We don't really need to go into these> which the server then recieves, processes, then sends a response for your browser to re-render.
+Languages: There are three standard languages used for displaying data to you.
+* HTML: Hyper Text Markup Language. This is the basic building blocks for front-end web development. Html is the language your browser renders to display raw data on the webpage.
+* CSS: Cascading Style Sheets - This language is *mostly* used for styling webpages, and making them look pretty essentially. You can add "classes" to elements in your html, to tag them as being part of a certain group, which can give them a predefined look and feel.
+* Javascript: How we make changes to our webpages without reloading it. Imagine when you click submit on a registration form, and it tells you the passwords aren't the same, but the page doesn't reload. How does it do this? Javascript. All Javascript. 
+Concepts: 
+* Dynamic vs Static webpages: Static webpages are used mostly for displaying content that won't be changing often, and have the advantage of bearing a very low load wherever they are hosted. This is because, none of the html has to be generated before sending the webpage to the client who requested it. Dynamic webpages use more resources on the server, but are basically webpages that are tailored based on the input provided by a user. This means, showing your specific username at the top of a page, or generating your news feed for facebook.
+* MVC: Model View Controller
+ ** Views (Templates): These are what the user sees, and what are (usually) dynamically generated . It is important to note that none of your logic should be in your template usually. If it's able to be abstracted out to the controller, that's where it should be.
+ ** Models: These are your "Objects". They're the database tables you have that you associate data with. Models have attributes to them that are columns in the table. For example, a User might have 'name', 'username', 'email', and 'password' fields.
+ ** Controllers: This is where the logic for your application goes. With the framework we'll be demo'ing with, you declare which url will map to which function, which in turn returns a certain template back to the person who requested the data. Again, we want to try and isolate most, if not all, the logic to the controller, and not to the template.
+Tools: We have a ton of tools at our disposal to help us manage and write websites.
+* Virtual Environments: Because we'll be talking mostly about Frameworks like Django, Flask, and Rails, we will want to have a virtual environment. These are basically a local install of the language and it's modules for the web framework we're developing in. 
+* Databases (Relational Database Management Systems?) Flask - SQLAlchemy
+ ** Different Types: MySQL, PostreSQL
+ ** Migrations - Migrations are how we add new columns and tables to our database without direct interaction with it, and without having to destroy + recreate the database. 
+Different things in web development:
+* Forms: This is what our user interacts with to send us data. When they submit a form, it's our responsibility to gather that information and store it in the database.
+* Login: An integral portion to most web applications. We will be demo'ing this.
+Extra?:
+* Deployment strategies
+ ** Apache (wsgi) -- Possibly a quick demo on how to set this up.
