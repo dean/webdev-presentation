@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Introduction to Web Development &mdash; Intro to Web Development 2013.11.26 documentation</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="_static/slides.css" type="text/css" />
+    
+
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="top" title="Intro to Web Development 2013.11.26 documentation" href="#" /> 
+  </head>
+  <body>
+
+<section
+   id="slide_container"
+   class='slides layout-regular'>
+
+
+  <article class="slide level-1" id="introduction-to-web-development">
+<h1>Introduction to Web Development</h1>
+
+</article>
+<article class="slide level-2" id="what-is-web-development">
+<h2>What is Web Development?</h2>
+<ul class="simple">
+<li>Doing any development work for a website</li>
+<li>Design</li>
+<li>Interactive components</li>
+<li>Scaling</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="how-browsers-work">
+<h2>How browsers work</h2>
+<ul class="simple">
+<li>User tries to visit a site</li>
+<li>Request IP through DNS lookup</li>
+<li>Send request for the site to that IP</li>
+<li>Request hits server and it decides what to do</li>
+<li>Server sends you a file containing page's contents and resources</li>
+<li>Browser renders the file (HTML, CSS, Javascript)</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="client-side-vs-server-side">
+<h2>Client-side vs. Server-side</h2>
+<ul>
+<li><dl class="first docutils">
+<dt>Client-side: Things happening in browser</dt>
+<dd><ul class="first last simple">
+<li>Doesn't require internet access</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Server-side:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Data shows up in request with method type</dt>
+<dd><ul class="first last simple">
+<li>GET</li>
+<li>POST</li>
+<li>HEAD</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Server sends client a response, which updates the page</p>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="languages">
+<h2>Languages</h2>
+<ul>
+<li><dl class="first docutils">
+<dt>HTML: Hyper Text Markup Language</dt>
+<dd><ul class="first last simple">
+<li>Building blocks for front-end web development</li>
+<li>The language your browser renders to display raw data on the webpage</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>CSS: Cascading Style Sheets</dt>
+<dd><ul class="first last simple">
+<li>Mostly for styling (making it pretty)</li>
+<li>&quot;classes&quot; for elements to tag groups then apply looks</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>JavaScript</dt>
+<dd><ul class="first last simple">
+<li>Changes page without reloading it</li>
+<li>Example: multiple steps in a registration form; data only sent at the
+end</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="concepts">
+<h2>Concepts</h2>
+<ul>
+<li><dl class="first docutils">
+<dt>Dynamic vs Static webpages</dt>
+<dd><ul class="first last simple">
+<li>Static for infrequently changed pages -- OSULUG</li>
+<li>Dynamic for interactive or frequently updated -- Facebook</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>MVC (Model View Controller)</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Views (templates)</dt>
+<dd><ul class="first last simple">
+<li>structure how user sees data</li>
+<li>should not contain logic</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Models (objects)</dt>
+<dd><ul class="first last simple">
+<li>database tables</li>
+<li>attributes are columns</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Controllers (logic)</dt>
+<dd><ul class="first last simple">
+<li>which URL maps to which function</li>
+<li>isolate the logic here</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="tools">
+<h2>Tools</h2>
+<ul>
+<li><dl class="first docutils">
+<dt>Virtual Environments</dt>
+<dd><ul class="first last simple">
+<li>isolated installation of language and dependencies</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Databases</dt>
+<dd><ul class="first last simple">
+<li>SQLAlchemy for Flask</li>
+<li>Others use MySQL, PostgreSQL, SQLite</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Migrations</dt>
+<dd><ul class="first last simple">
+<li>Add new columns to database without direct interaction</li>
+<li>Other option is destroy then recreate the DB</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>Different things in web development:</p>
+<ul class="simple">
+<li>Forms: This is what our user interacts with to send us data. When they</li>
+<li>submit a form, it's our responsibility to gather that information and store</li>
+<li>it in the database.</li>
+<li>Login: An integral portion to most web applications. We will be demo'ing</li>
+<li>this.</li>
+</ul>
+<p>Extra?:
+* Deployment strategies</p>
+<blockquote>
+<div>** Apache (wsgi) -- Possibly a quick demo on how to set this up.</div></blockquote>
+
+</article>
+
+
+</section>
+
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '2013.11.26',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/common.js"></script>
+    <script type="text/javascript" src="_static/slides.js"></script>
+    <script type="text/javascript" src="_static/sync.js"></script>
+    <script type="text/javascript" src="_static/controller.js"></script>
+    <script type="text/javascript" src="_static/init.js"></script>
+    
+  </body>
+</html>
