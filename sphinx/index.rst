@@ -51,18 +51,25 @@ Dynamic vs Static webpages
 ==========================
 * Static for infrequently changed pages -- OSULUG
 * Dynamic for interactive or frequently updated -- Facebook
-* Dynamic can use lots of resources
+* Dynamic can use lots of resources, due to always regenerating pages.
+
+Caching
+=======
+* This can be mitigated through caching 
+
+.. figure:: /_static/caching.jpg
+    :align: center
+    :scale: 50%
 
 MVC (Model View Controller)
 ==========================
+
 * Views (templates)
     * structure how user sees data
     * should not contain logic
-
 .. figure:: /_static/mvc.jpg
     :scale: 25%
     :align: right
-
 * Models (objects)
     * database tables
     * attributes are columns
@@ -74,20 +81,14 @@ Tools
 =====
 
 * Virtual Environments
-    * isolated installation of language and dependencies
+    * Isolated installation of language and dependencies
 * Databases
-    * SQLAlchemy for Flask
-    * Others use MySQL, PostgreSQL, SQLite
+    * MySQL - Larger install, but faster for retrieval and storing of data. 
+    * SQLite - Lightweight install, quick setup, but slower. 
+    * Many more!
 * Migrations
-    * Add new columns to database without direct interaction
+    * Add new columns/tables to database without direct interaction
     * Other option is destroy then recreate the DB
-
-Caching
-=======
-
-.. figure:: /_static/caching.jpg
-    :align: center
-    :scale: 50%
 
 Important Concepts
 ==================
@@ -102,3 +103,5 @@ Important Concepts
 Extra?:
 * Deployment strategies
  ** Apache (wsgi) -- Possibly a quick demo on how to set this up.
+=======
+>>>>>>> Stashed changes

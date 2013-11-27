@@ -31,6 +31,6 @@ Tools: We have a ton of tools at our disposal to help us manage and write websit
  ** Different Types: MySQL (Good for straight storing and recieving data
                      SQLite (Very lightweight, quick and easy to set up)
                      Many more with different advantages/disadvantages. 
- ** Migrations - Migrations are how we add new columns and tables to our database without direct interaction with it, and without having to destroy + recreate the database. 
+ ** Migrations - Migrations are how we add new columns and tables to our database without direct interaction with it, and without having to destroy + recreate the database. Mention how you can't just add columns to a table, you're really copying all your data when doing a migration. 
 
 Demo time: Lets build simple registration, and use a library for logins.
