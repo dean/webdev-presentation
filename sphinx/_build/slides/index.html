@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/styles.css" type="text/css" />
-    <link rel="stylesheet" href="_static/slides.css" type="text/css" />
+    <link rel="stylesheet" href="_static/single.css" type="text/css" />
     
 
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -30,7 +30,7 @@
 <article class="slide level-2" id="what-is-web-development">
 <h2>What is Web Development?</h2>
 <ul class="simple">
-<li>Doing any development work for a website</li>
+<li>Making Websites and Web Applications</li>
 <li>Design</li>
 <li>Interactive components</li>
 <li>Scaling</li>
@@ -42,7 +42,7 @@
 <ul class="simple">
 <li>User tries to visit a site</li>
 <li>Request IP through DNS lookup</li>
-<li>Send request for the site to that IP</li>
+<li>Send request for the data to that IP</li>
 <li>Request hits server and it decides what to do</li>
 <li>Server sends you a file containing page's contents and resources</li>
 <li>Browser renders the file (HTML, CSS, Javascript)</li>
@@ -68,12 +68,12 @@
 <dd><ul class="first last simple">
 <li>GET</li>
 <li>POST</li>
-<li>HEAD</li>
+<li>Others, but not used as often.</li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p class="first">Server sends client a response, which updates the page</p>
+<li><p class="first">Server sends client data, which is rendered thorugh browser.</p>
 </li>
 </ul>
 </dd>
@@ -116,21 +116,18 @@ end</li>
 </ul>
 
 </article>
-<article class="slide level-2" id="concepts">
-<h2>Concepts</h2>
-<ul>
-<li><dl class="first docutils">
-<dt>Dynamic vs Static webpages</dt>
-<dd><ul class="first last simple">
+<article class="slide level-2" id="dynamic-vs-static-webpages">
+<h2>Dynamic vs Static webpages</h2>
+<ul class="simple">
 <li>Static for infrequently changed pages -- OSULUG</li>
 <li>Dynamic for interactive or frequently updated -- Facebook</li>
+<li>Dynamic can use lots of resources</li>
 </ul>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>MVC (Model View Controller)</dt>
-<dd><ul class="first last">
+
+</article>
+<article class="slide level-2" id="mvc-model-view-controller">
+<h2>MVC (Model View Controller)</h2>
+<ul>
 <li><dl class="first docutils">
 <dt>Views (templates)</dt>
 <dd><ul class="first last simple">
@@ -140,6 +137,11 @@ end</li>
 </dd>
 </dl>
 </li>
+</ul>
+<div class="figure align-right">
+<a class="reference internal image-reference" href="_images/mvc.jpg"><img alt="_images/mvc.jpg" src="_images/mvc.jpg" style="width: 400.0px; height: 282.75px;" /></a>
+</div>
+<ul>
 <li><dl class="first docutils">
 <dt>Models (objects)</dt>
 <dd><ul class="first last simple">
@@ -154,10 +156,6 @@ end</li>
 <dd><ul class="first last simple">
 <li>which URL maps to which function</li>
 <li>isolate the logic here</li>
-</ul>
-</dd>
-</dl>
-</li>
 </ul>
 </dd>
 </dl>
@@ -195,6 +193,13 @@ end</li>
 </dl>
 </li>
 </ul>
+
+</article>
+<article class="slide level-2" id="caching">
+<h2>Caching</h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/caching.jpg"><img alt="_images/caching.jpg" src="_images/caching.jpg" style="width: 710.0px; height: 409.5px;" /></a>
+</div>
 <p>Different things in web development:</p>
 <ul class="simple">
 <li>Forms: This is what our user interacts with to send us data. When they</li>

@@ -5,7 +5,7 @@ Introduction to Web Development
 What is Web Development?
 ========================
 
-* Doing any development work for a website
+* Making Websites and Web Applications
 * Design
 * Interactive components
 * Scaling
@@ -15,7 +15,7 @@ How browsers work
 
 * User tries to visit a site
 * Request IP through DNS lookup
-* Send request for the site to that IP
+* Send request for the data to that IP
 * Request hits server and it decides what to do
 * Server sends you a file containing page's contents and resources
 * Browser renders the file (HTML, CSS, Javascript)
@@ -30,8 +30,8 @@ Client-side vs. Server-side
     * Data shows up in request with method type
         * GET
         * POST
-        * HEAD
-    * Server sends client a response, which updates the page
+        * Others, but not used as often.
+    * Server sends client data, which is rendered thorugh browser.
 
 Languages
 =========
@@ -47,22 +47,29 @@ Languages
     * Example: multiple steps in a registration form; data only sent at the
       end
 
-Concepts
-========
+Dynamic vs Static webpages
+==========================
+* Static for infrequently changed pages -- OSULUG
+* Dynamic for interactive or frequently updated -- Facebook
+* Dynamic can use lots of resources
 
-* Dynamic vs Static webpages
-    * Static for infrequently changed pages -- OSULUG
-    * Dynamic for interactive or frequently updated -- Facebook
-* MVC (Model View Controller)
-    * Views (templates)
-        * structure how user sees data
-        * should not contain logic
-    * Models (objects)
-        * database tables
-        * attributes are columns
-    * Controllers (logic)
-        * which URL maps to which function
-        * isolate the logic here
+MVC (Model View Controller)
+==========================
+* Views (templates)
+    * structure how user sees data
+    * should not contain logic
+
+.. figure:: /_static/mvc.jpg
+    :scale: 25%
+    :align: right
+
+* Models (objects)
+    * database tables
+    * attributes are columns
+* Controllers (logic)
+    * which URL maps to which function
+    * isolate the logic here
+
 Tools
 =====
 
@@ -75,6 +82,12 @@ Tools
     * Add new columns to database without direct interaction
     * Other option is destroy then recreate the DB
 
+Caching
+=======
+
+.. figure:: /_static/caching.jpg
+    :align: center
+    :scale: 50%
 
 Different things in web development:
 

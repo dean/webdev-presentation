@@ -51,14 +51,18 @@ Dynamic vs Static webpages
 ==========================
 * Static for infrequently changed pages -- OSULUG
 * Dynamic for interactive or frequently updated -- Facebook
-* Dynamic can use lots of resources 
+* Dynamic can use lots of resources
 
 MVC (Model View Controller)
 ==========================
-
 * Views (templates)
     * structure how user sees data
     * should not contain logic
+
+.. figure:: /_static/mvc.jpg
+    :scale: 25%
+    :align: right
+
 * Models (objects)
     * database tables
     * attributes are columns
@@ -78,8 +82,15 @@ Tools
     * Add new columns to database without direct interaction
     * Other option is destroy then recreate the DB
 
+Caching
+=======
 
-Different things in web development:
+.. figure:: /_static/caching.jpg
+    :align: center
+    :scale: 50%
+
+Important Concepts
+==================
 
 * Forms: This is what our user interacts with to send us data. When they
 * submit a form, it's our responsibility to gather that information and store
