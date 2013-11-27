@@ -1,3 +1,5 @@
 webdev-presentation.*
 *.log
 *.pyc
+db
+env
